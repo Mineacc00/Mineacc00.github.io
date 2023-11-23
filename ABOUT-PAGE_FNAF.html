@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css" integrity="sha512-3q8fi8M0VS+X/3n64Ndpp6Bit7oXSiyCnzmlx6IDBLGlY5euFySyJ46RUlqIVs0DPCGOypqP8IRk/EyPvU28mQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/five-nights-at-freddys" rel="stylesheet">
+                
+</head>
+
+<style>
+
+    @import url('https://fonts.cdnfonts.com/css/five-nights-at-freddys');
+
+    body{
+        background-image: url(https://wallpaperset.com/w/full/d/c/b/168364.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        backface-visibility: initial;
+        padding-bottom: 100px;
+    }
+
+   #box{
+        background-color: rgba(0, 0, 0, 0.671);
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top:5%;
+   }
+
+   header{
+    background-color: rgba(100, 100, 100, 0.911);
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+
+   img{
+    margin-left: 32%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: left;
+   }
+
+   header h1{
+    font-family: Five Nights At Freddys;
+    color: black;
+    padding-top: 7px;
+    padding-left: 38%;
+   }
+
+   nav{
+    background-color: rgba(0, 0, 0, 0.911);
+    color: aliceblue;
+    height: 40px;
+    padding-left: 39%;
+    }
+
+    nav a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+    }
+
+    nav a:hover{
+        background-color: rgba(255, 255, 255, 0.548);
+        color: rgb(240, 248, 255);
+    }
+
+    #box h1{
+        font-family: Five Nights At Freddys;
+        text-align: center;
+        color: white;
+        padding-top: 3%;
+    }
+
+    #box h3{
+        font-family: Five Nights At Freddys;
+        text-align:justify;
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    #container{
+        display: flex;
+    }
+
+    #container p{
+        color: white;
+        font-family: Five Nights At Freddys;
+        text-align: center;
+        padding-left: 42%;
+    }
+
+    #img1 p{
+        color: white;
+        font-family: Five Nights At Freddys;
+        text-align: center;
+        padding-left: 30%;
+    }
+
+    #img1 img{
+      border-radius: 5px;
+      border: 2px solid white;
+    }
+    
+    .spacing{
+        padding-bottom: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .spacing h1{
+        font-family: Five Nights At Freddys;
+        color: white;
+        text-align: center;
+    }
+
+    .col-5{
+        padding-right: 300px;
+        padding-bottom: 40px;
+    }
+
+    .col-5 img{
+        border-radius: 5px;
+      border: 2px solid white;
+    }
+
+    .col-7{
+        font-family: Five Nights At Freddys;
+        color: white;
+        padding-right: 300px;
+        padding-top: 1.5%;
+        padding-left: 30px;
+
+    }
+
+    .col-7 h5{
+        font-size: 30px;
+    }
+
+    #user-icon {
+			position: absolute;
+			top: 20px;
+			right: 50px;
+			cursor: pointer;
+		}
+		#user-menu {
+			position: absolute;
+			top: 40px;
+			right: 10px;
+			background-color: #f1f1f1;
+			padding: 10px;
+			display: none;
+			cursor: pointer;
+		}
+		#user-menu a {
+			display: block;
+			padding: 5px;
+			text-decoration: none;
+			color: #333;
+		}
+		#user-menu a:hover {
+			background-color: #ddd;
+		}
+</style>
+
+<body>
+
+        <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/8/82/FazbearEntertainment-ARLogo.png/revision/latest?cb=20191130000903" width="100px" height="100px">
+        <header>
+            <h1>FIVE NIGHTS AT FREDDYS</h1>
+        </header>
+
+        <nav>
+            <a href="Final%20Project_3rdsem.html">Home</a>
+            <a href="Final%20Project_3rdsem%20testing.html">About</a>
+            <a href="Final%20project_3rdsem%20testing%20gallery.html#">Gallery</a>
+            <a href="Final%20project_3rdsem%20review.html">Review Page</a>
+        </nav>
+        
+        <div id="box">
+            <h1>ABOUT THE PAGE</h1>
+            <h3>This website is about the review of the first 5 Five Nights At Freddys games. Each game shall have a review on it as well sneak peaks to what the game looks like and what the player will encounter when diving into the said game. All games are created by Scott Cawthon.</h3>
+        
+            <div id="container">
+                
+                <div id="img1" class="col-md-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/1/12/FNAF1logo.jpg" width="540px" height="250px">
+                    <p>Five Nights At Freddys 1</p>
+                </div>
+
+                <div id="img1" class="col-md-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/35/FNAF2logo.jpg" width="540px" height="250px">
+                    <p>Five Nights At Freddys 2</p>
+                </div>
+            
+            </div>
+                
+            <div id="container">
+
+                <div id="img1" class="col-md-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/2/2b/FNAF3Artwork.png" width="540px" height="250px">
+                    <p>Five Nights At Freddys 3</p>
+                </div>
+
+                <div id="img1" class="col-md-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/d/de/FNAF4Artwork.png" width="540px" height="250px">
+                    <p>Five Nights At Freddys 4</p>
+                </div>
+
+            </div>
+
+            <div id="container">
+                <div id="img1" class="col align-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/69/Five_Nights_at_Freddy%27s-Sister_Location.jpg" width="540px" height="250px">
+                </div>
+            </div>
+
+            <div id="container">
+                <p>FNAF - Sister Location</p>
+            </div>
+        
+            <div class="spacing">
+            <hr color="white" size="10">
+            <h1>Creator of the game</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-5">
+                    <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/9/91/IntroPoster_ScottCawthon.png/revision/latest?cb=20190619132401" width="540px" height="350px">
+                </div>
+
+                <div class="col-7">
+                    <h5>Scott Braden Cawthon is an American writer and former video game developer. He is the creator of the Five Nights at Freddy's media franchise of video games, books, and an upcoming film adaptation. Born in Texas, Cawthon started out developing Christian adventure games which were financially unsuccessful.</h5>
+                </div>
+            </div>
+
+            <div class="spacing">
+                <hr color="white" size="10">
+                <h1>Members</h1>
+            </div>
+
+
+            <div id="container">
+                
+                <div id="img1" class="col-md-5">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/356425876_274763375203520_1213277398970108556_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=aee45a&_nc_ohc=ZAilUaV-GJAAX-r2mGF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTPs-NtDlhdCRupfn8VJsQr9IjjcN-KyaR4hfNYSPA3AQ&oe=64D746D8" width="450px" height="350px">
+                    <p>Antonio Rafael I. Martinez IV</p>
+                </div>
+
+                <div id="img1" class="col-md-5">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/361084303_823276549002310_1294292833885774885_n.jpg?stp=dst-jpg_s403x403&_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=vxDZOvESIc4AX9Ic3W9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRwnm3MYoBG-v5N-1PzVYAP5zwVNjCtSUP6I3Zh2FjtMQ&oe=64D747E0" width="450px" height="350px">
+                    <p>Charlotte Sullano</p>
+                </div>
+            
+            </div>
+                
+            <div id="container">
+
+                <div id="img1" class="col-md-5">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/361080763_236365635996894_3633585499230291834_n.jpg?stp=dst-jpg_s403x403&_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=rkiIgZ6NlrQAX92wYly&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRgri2A-9t66t5e3D_MkpSX71UCAd7SvK2I3YEaAFjfzA&oe=64D739C0" width="450px" height="400px">
+                    <p>Josiah Beltran</p>
+                </div>
+
+                <div id="img1" class="col-md-5">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/361079026_820948122554381_4713452767568795496_n.jpg?stp=dst-jpg_s403x403&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=cDHG9LtEWKgAX98Y7jJ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdTN-eJxUdOPrSPetDYzWGlB2Ruy9wQcOePnMKZPaBu9ow&oe=64D73EC8" width="450px" height="400px">
+                    <p>Kendric Gorospe</p>
+                </div>
+
+            </div>
+
+            <div id="container">
+                <div id="img1" class="col align-center">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/361086359_666056404922767_6317407824482547497_n.jpg?stp=dst-jpg_p403x403&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_ohc=FzpO7ybMlu0AX9xqsDF&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQsdGBf5YxX_9cWesLU2ucrpkMIfVgxi6kD1fQnoUXLWg&oe=64D72066" width="450px" height="350px">
+                </div>
+            </div>
+
+            <div id="container">
+                <p>Tristan Gonzales</p>
+            </div>
+
+            <div id="user-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" width="50px" height="50px" onclick="showUserMenu()">
+            </div>
+            <div id="user-menu" onclick="hideUserMenu()">
+                <a href="#">My Profile</a>
+                <a href="#">Log Out</a>
+            </div>
+            <script>
+                function showUserMenu() {
+                    document.getElementById("user-menu").style.display = "block";
+                }
+                function hideUserMenu() {
+                    document.getElementById("user-menu").style.display = "none";
+                }
+            </script>
+
+
+        </div>
+            
+</body>
+</html>

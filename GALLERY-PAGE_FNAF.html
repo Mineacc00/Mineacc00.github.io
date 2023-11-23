@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css" integrity="sha512-3q8fi8M0VS+X/3n64Ndpp6Bit7oXSiyCnzmlx6IDBLGlY5euFySyJ46RUlqIVs0DPCGOypqP8IRk/EyPvU28mQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/five-nights-at-freddys" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>          
+</head>
+
+<style>
+
+    @import url('https://fonts.cdnfonts.com/css/five-nights-at-freddys');
+
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        backface-visibility: initial;
+        padding-bottom: 100px;
+    }
+
+   #box{
+        background-color: rgba(94, 94, 94, 0.671);
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top:5%;
+        border-radius: 5px;
+        border: 2px solid white;
+   }
+
+   header{
+    background-color: rgba(100, 100, 100, 0.911);
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+   
+
+   img{
+    margin-left: 32%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: left;
+   }
+
+   header h1{
+    font-family: Five Nights At Freddys;
+    color: black;
+    padding-top: 7px;
+    padding-left: 38%;
+   }
+
+   nav{
+    background-color: rgba(0, 0, 0, 0.911);
+    color: aliceblue;
+    height: 40px;
+    padding-left: 39%;
+    }
+
+    nav a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+    }
+
+    nav a:hover{
+        background-color: rgba(255, 255, 255, 0.548);
+        color: rgb(240, 248, 255);
+    }
+    
+    
+    #fnaf1{
+        background-image: url(https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/2/24/OfficeEmpty.png/revision/latest?cb=20220806131812);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        backface-visibility: initial;
+        padding-bottom: 100px;
+    }
+
+    #box h1{
+        font-family: Five Nights At Freddys;
+        text-align: center;
+        color: white;
+        padding-top: 3%;
+    }
+
+    #box h3{
+        font-family: Five Nights At Freddys;
+        text-align:justify;
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-left: 8%;
+        margin-right: 8%;
+        text-align: center;
+    }
+
+    #container{
+        display: flex;
+    }
+
+    #container p{
+        color: white;
+        font-family: Five Nights At Freddys;
+        text-align: center;
+        padding-left: 45%;
+    }
+
+    #img1 p{
+        color: white;
+        font-family: Five Nights At Freddys;
+        text-align: center;
+        padding-left: 45%;
+    }
+
+    #img1 img{
+      border-radius: 5px;
+      border: 2px solid white;
+    }
+    
+    .spacing{
+        padding-bottom: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .spacing h1{
+        font-family: Five Nights At Freddys;
+        color: white;
+        text-align: center;
+    }
+
+    .col-5{
+        padding-right: 300px;
+        padding-bottom: 40px;
+    }
+
+    .col-7{
+        font-family: Five Nights At Freddys;
+        color: white;
+        padding-right: 300px;
+        padding-top: 1.5%;
+        padding-left: 30px;
+
+    }
+
+    .col-7 h5{
+        font-size: 30px;
+    }
+
+    .spacing{
+        padding-bottom: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+
+    #fnaf2{
+        background-image: url(https://i.pinimg.com/originals/93/05/87/9305871ff9c0ae6e010db33ad09ee218.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        backface-visibility: initial;
+        padding-bottom: 100px;
+    }
+
+    #fnaf3{
+        background-image: url(https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/1/14/FNaF3_Office.png/revision/latest?cb=20150304224158);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        backface-visibility: initial;
+        padding-bottom: 100px;
+    }
+
+
+    #fnaf4{
+        background-image: url(https://preview.redd.it/czvh6yd70sv41.png?width=1300&format=png&auto=webp&s=e4356ca1402d44a67be5b40cccf6f69a45032e8e);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        backface-visibility: initial;
+        padding-bottom: 100px;
+    }
+
+    #fnaf5{
+        background-image: url(https://images3.alphacoders.com/952/952626.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        backface-visibility: initial;
+        padding-bottom: 100px;
+    }
+
+
+    #button2{
+        text-decoration: none;
+        padding: 8px 30px;
+        border-radius: 40px;
+        border-color: white;
+        background: rgb(255, 253, 253);
+        color: rgb(0, 0, 0);
+        font-size: 1.5em;
+        display: inline-block;
+        z-index: 10000;
+        margin-bottom: 10px;
+        font-family: Five Nights At Freddys;
+        margin-top: 2%;
+        margin-left: 44%;
+    }
+
+</style>
+
+
+<script>
+
+  function craft()
+  {
+      let purpose = prompt("Where would you like to go (FNAF1, FNAF2, FNAF3, FNAF4, SL): ");
+                  
+      if (purpose == "FNAF1")
+      {
+          window.location="#fnaf1";
+      }
+                      
+      else if(purpose == "FNAF2")
+      {
+          window.location="#fnaf2";
+      }
+
+      else if(purpose == "FNAF3")
+      {
+          window.location="#fnaf3";
+      }
+
+      else if(purpose == "FNAF4")
+      {
+          window.location="#fnaf4";
+      }
+
+      else if(purpose == "SL")
+      {
+          window.location="#fnaf5";
+      }
+
+  }
+
+  </script>
+
+<body>
+
+    <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/8/82/FazbearEntertainment-ARLogo.png/revision/latest?cb=20191130000903" width="100px" height="100px">
+    <header>
+        <h1>FIVE NIGHTS AT FREDDYS</h1>
+    </header>
+
+    <nav>
+        <a href="Final%20Project_3rdsem.html">Home</a>
+        <a href="Final%20Project_3rdsem%20testing.html">About</a>
+        <a href="Final%20project_3rdsem%20testing%20gallery.html#">Gallery</a>
+        <a href="Final%20project_3rdsem%20review.html">Review Page</a>
+    </nav>
+
+    <div id="fnaf1">
+    <div id="box">
+      <h1>Five Nights At Freddys 1</h1>
+      <h3>Characters</h3>
+      <div id="container">
+          <div id="img1" class="col-md-5">
+              <img src="https://i.pinimg.com/originals/e9/43/fb/e943fbb6202caa99f0315dabbdb9f3c3.gif" width="540px" height="250px">
+              <p>Freddy Fazbear</p>
+          </div>
+
+          <div id="img1" class="col-md-5">
+              <img src="https://pa1.aminoapps.com/7853/af05aabd1907ecb777ded82c7f028d4fd30e1defr1-500-225_hq.gif" width="540px" height="250px">
+              <p>Bonnie</p>
+          </div>
+      </div>
+          
+      <div id="container">
+
+          <div id="img1" class="col-md-5">
+              <img src="https://media.tenor.com/uqjG1MkNF2wAAAAC/chica-fnaf.gif" width="540px" height="250px">
+              <p>Chica</p>
+          </div>
+
+          <div id="img1" class="col-md-5">
+              <img src="https://i.makeagif.com/media/11-01-2015/bgMVjn.gif" width="540px" height="250px">
+              <p>Foxy the pirate</p>
+          </div>
+      </div>
+        
+      <h1>Sample Gameplay</h1>
+
+      <div id="container">
+        <div id="img1" class="col-md-5">
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/956336538498790427/B1867BE4763EE1CF44074A3FAB4B6666FF738EC2/" width="540px" height="250px">
+            <p>Figure 1</p>
+        </div>
+
+        <div id="img1" class="col-md-5">
+            <img src="https://media.indiedb.com/cache/images/games/1/34/33886/thumb_620x2000/final_gamplay_trailer.avi.jpg" width="540px" height="250px">
+            <p>Figure 2</p>
+        </div>
+    </div>
+        
+    <div id="container">
+
+        <div id="img1" class="col-md-5">
+            <img src="https://i.ytimg.com/vi/KQGbPna-tWY/maxresdefault.jpg" width="540px" height="250px">
+            <p>Figure 3</p>
+        </div>
+
+        <div id="img1" class="col-md-5">
+            <img src="https://play-lh.googleusercontent.com/GsuEZzJv8D4eMLuWOkh-05iuAXgBT_9479IeYsgqIK1rBKIc84_Bw8Ur65uHlY_wR5I=w526-h296-rw" width="540px" height="250px">
+            <p>Figure 4</p>
+        </div>
+  </div>
+
+        <div id="container">
+          <div id="img1" class="col-md-5">
+            <img src="https://play-lh.googleusercontent.com/mv4b7sVQN-rBgNdxMRuVv4E8xd4UPwiAnLY_Njh5dBw5db9lhXjYY1_7ZKu8qXSOJQ" width="540px" height="250px">
+            <p>Figure 5</p>
+        </div>
+
+        <div id="img1" class="col-md-5">
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/1633076066617843471/E73E30DF48B3AC15B4FE176ED8D21A9D85D2F8D9/" width="540px" height="250px">
+            <p>Figure 6</p>
+        </div>
+      </div>
+
+  </div>
+  <button id="button2" onclick="craft()" value="Redirect Me">EXPLORE</button>
+</div>
+
+
+<div class="spacing">
+  <hr color="white" size="10">
+ </div>
+
+
+<div id="fnaf2">
+
+  <div id="box">
+    <h1>Five Nights At Freddys 2</h1>
+    <h3>Characters</h3>
+    <div id="container">
+        <div id="img1" class="col-md-5">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bf5ce993-528c-41f6-b33c-48d7754d7a03/depiu53-b85ea216-a43d-4f51-9d99-fa3eba46b298.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JmNWNlOTkzLTUyOGMtNDFmNi1iMzNjLTQ4ZDc3NTRkN2EwM1wvZGVwaXU1My1iODVlYTIxNi1hNDNkLTRmNTEtOWQ5OS1mYTNlYmE0NmIyOTguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.6Zbj5hlIEMYBctkssn8Bqf-U4F-I5lkS1BCssy2XRiQ" width="540px" height="250px">
+            <p>Toy freddy</p>
+        </div>
+
+        <div id="img1" class="col-md-5">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4d4e31c3-4d78-4016-8ed8-71a5d23cc179/dax03zi-3a8dba69-36aa-41cd-b0b6-38a0823ea251.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRkNGUzMWMzLTRkNzgtNDAxNi04ZWQ4LTcxYTVkMjNjYzE3OVwvZGF4MDN6aS0zYThkYmE2OS0zNmFhLTQxY2QtYjBiNi0zOGEwODIzZWEyNTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EP6fSqqLZLEj7KDVdtBFurFZz-EkG-kPRuJPSfX6CZ8" width="540px" height="250px">
+            <p>Withered freddy</p>
+        </div>
+    </div>
+        
+    <div id="container">
+
+        <div id="img1" class="col-md-5">
+            <img src="https://i.pinimg.com/originals/aa/6b/38/aa6b38964db0fd4405ee66aca474618b.gif" width="540px" height="250px">
+            <p>Toy Chica</p>
+        </div>
+
+        <div id="img1" class="col-md-5">
+            <img src="https://static.wikia.nocookie.net/the-fnaf-ultimate-custom-night/images/a/af/Withered_Chica_Jumpscare.gif/revision/latest/scale-to-width-down/250?cb=20180630234903" width="540px" height="250px">
+            <p>Withered Chica</p>
+        </div>
+    </div>
+
+    <div id="container">
+
+      <div id="img1" class="col-md-5">
+          <img src="https://media.tenor.com/hvARjTQusbMAAAAC/toy-bonnie-jumpscare.gif" width="540px" height="250px">
+          <p>Toy Bonnie</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://i.pinimg.com/originals/14/d0/13/14d01341331d9520c9585781e8f8a155.gif" width="540px" height="250px">
+          <p>Withered Bonnie</p>
+      </div>
+  </div>
+
+  <div id="container">
+
+    <div id="img1" class="col-md-5">
+        <img src="https://i.pinimg.com/originals/aa/31/f0/aa31f02fe1cafc1f0a843baafc39e5bd.gif" width="540px" height="250px">
+        <p>Mangle</p>
+    </div>
+
+    <div id="img1" class="col-md-5">
+        <img src="https://i.pinimg.com/originals/e6/e5/b3/e6e5b3a98ddfc57a6e1b2d45fef4ab3d.gif" width="540px" height="250px">
+        <p>Marionette</p>
+    </div>
+</div>
+      
+    <h1>Sample Gameplay</h1>
+
+    <div id="container">
+      <div id="img1" class="col-md-5">
+          <img src="https://i.ytimg.com/vi/0I6Mc2fn0AQ/maxresdefault.jpg" width="540px" height="250px">
+          <p>Figure 1</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://img-eshop.cdn.nintendo.net/i/60b8a05ba1d759af3f6c445fda77c13c737ae6c5f1f6429301485a7399c64861.jpg?w=1000" width="540px" height="250px">
+          <p>Figure 2</p>
+      </div>
+  </div>
+      
+  <div id="container">
+
+      <div id="img1" class="col-md-5">
+          <img src="https://img-eshop.cdn.nintendo.net/i/b9748888032abdcbe44ac24ea066d7483eb11cc5f6db91174cc827252b69c2f5.jpg" width="540px" height="250px">
+          <p>Figure 3</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://m.media-amazon.com/images/M/MV5BNzVlMzE1N2UtNGY4Yy00YzU4LWE4NWEtZjIwNTc5MjNhN2NmXkEyXkFqcGdeQXVyNjM2NTM3ODA@._V1_.jpg" width="540px" height="250px">
+          <p>Figure 4</p>
+      </div>
+</div>
+
+      <div id="container">
+        <div id="img1" class="col-md-5">
+          <img src="https://assetsio.reedpopcdn.com/five-nights-at-freddys-2-sneaks-out-today-on-steam-1415729725291.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp" width="540px" height="250px">
+          <p>Figure 5</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://vignette.wikia.nocookie.net/freddy-fazbears-pizza/images/1/18/FNAF2GameOverScreen.png/revision/latest?cb=20141111102133" width="540px" height="250px">
+          <p>Figure 6</p>
+      </div>
+    </div>
+</div>
+<button id="button2" onclick="craft()" value="Redirect Me">EXPLORE</button>
+</div>
+
+<div class="spacing">
+  <hr color="white" size="10">
+ </div>
+
+ <div id="fnaf3">
+
+  <div id="box">
+    <h1>Five Nights At Freddys 3</h1>
+    <h3>Characters</h3>
+    <div id="container">
+        <div id="img1" class="col-md-5">
+            <img src="https://i.makeagif.com/media/3-24-2015/uW1BhK.gif" width="540px" height="250px">
+            <p>Phantom freddy</p>
+        </div>
+
+        <div id="img1" class="col-md-5">
+            <img src="https://j.gifs.com/m82679.gif" width="540px" height="250px">
+            <p>Phantom Chica</p>
+        </div>
+    </div>
+        
+    <div id="container">
+
+        <div id="img1" class="col-md-5">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8f579e6e-cafc-4e57-84a9-87cfc1b8575e/d8lgak1-8dc14692-8c3d-4262-863a-49049be001e1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhmNTc5ZTZlLWNhZmMtNGU1Ny04NGE5LTg3Y2ZjMWI4NTc1ZVwvZDhsZ2FrMS04ZGMxNDY5Mi04YzNkLTQyNjItODYzYS00OTA0OWJlMDAxZTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.px5M246vK8deG_kyRExQ1iSiE3wStFl0Saey3f9O_xE" width="540px" height="250px">
+            <p>Phantom Foxy</p>
+        </div>
+
+        <div id="img1" class="col-md-5">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3e939639-fb5a-4c30-acce-ecbaa4d136b8/d8lgq24-e64b804a-2e3e-4948-b25f-bc4318ad63ac.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNlOTM5NjM5LWZiNWEtNGMzMC1hY2NlLWVjYmFhNGQxMzZiOFwvZDhsZ3EyNC1lNjRiODA0YS0yZTNlLTQ5NDgtYjI1Zi1iYzQzMThhZDYzYWMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.k0LGQyqmJqvcWV9Z1mSWqyb6BcFUumpfD35utw3nDIo" width="540px" height="250px">
+            <p>Phantom Ballon Boy</p>
+        </div>
+    </div>
+
+    <div id="container">
+
+      <div id="img1" class="col-md-5">
+          <img src="https://i.makeagif.com/media/3-25-2016/r8dBUk.gif" width="540px" height="250px">
+          <p>Phantom Marionette</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://i.makeagif.com/media/4-03-2020/yjZY06.gif" width="540px" height="250px">
+          <p>Phantom Mangle</p>
+      </div>
+  </div>
+
+  <div id="container">
+    <div id="img1" class="col align-center">
+        <img src="https://thumbs.gfycat.com/CandidConventionalDrafthorse-size_restricted.gif" width="540px" height="250px">
+    </div>
+</div>
+
+<div id="container">
+    <p>SpringTrap</p>
+</div>
+      
+    <h1>Sample Gameplay</h1>
+
+    <div id="container">
+      <div id="img1" class="col-md-5">
+          <img src="https://www.kotaku.com.au/wp-content/uploads/sites/3/2015/03/04/flbxdh2goa8c7deuc2pl.png" width="540px" height="250px">
+          <p>Figure 1</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://artasgames.files.wordpress.com/2015/09/f3.jpg" width="540px" height="250px">
+          <p>Figure 2</p>
+      </div>
+  </div>
+      
+  <div id="container">
+
+      <div id="img1" class="col-md-5">
+          <img src="https://avatars.mds.yandex.net/get-games/1892995/2a000001802bd0568fc715120e5f75cd21e6/orig" width="540px" height="250px">
+          <p>Figure 3</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://imag.malavida.com/mvimgbig/download-fs/five-nights-at-freddys-3-15474-2.jpg" width="540px" height="250px">
+          <p>Figure 4</p>
+      </div>
+</div>
+
+      <div id="container">
+        <div id="img1" class="col-md-5">
+          <img src="https://cdn.mos.cms.futurecdn.net/c3555a3159ba9070a3577487fcf1bbde.jpeg" width="540px" height="250px">
+          <p>Figure 5</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d703fc3a-23e5-41ca-a298-2fe7856c8d95/dc1mz2e-5c343ed5-5904-4406-bb53-27a385c3691b.png/v1/fill/w_474,h_250,q_70,strp/c4d_fnaf_3_game_over_screen_by_yinyanggio1987_dc1mz2e-250t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MCIsInBhdGgiOiJcL2ZcL2Q3MDNmYzNhLTIzZTUtNDFjYS1hMjk4LTJmZTc4NTZjOGQ5NVwvZGMxbXoyZS01YzM0M2VkNS01OTA0LTQ0MDYtYmI1My0yN2EzODVjMzY5MWIucG5nIiwid2lkdGgiOiI8PTQwOTYifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.TELdfw6xSr9OKJ4pvOfrRhEpkDdwT9S2zEhwkwp5Mmc" width="540px" height="250px">
+          <p>Figure 6</p>
+      </div>
+    </div>
+</div>
+<button id="button2" onclick="craft()" value="Redirect Me">EXPLORE</button>
+</div>
+
+
+<div class="spacing">
+  <hr color="white" size="10">
+ </div>
+
+
+ <div id="fnaf4">
+
+  <div id="box">
+    <h1>Five Nights At Freddys 4</h1>
+    <h3>Characters</h3>
+    <div id="container">
+        <div id="img1" class="col-md-5">
+            <img src="https://i.pinimg.com/originals/49/ba/ff/49baff28088ddd988d46fc830056d63c.gif" width="540px" height="250px">
+            <p>Nightmare Freddy</p>
+        </div>
+
+        <div id="img1" class="col-md-5">
+            <img src="https://static.wikia.nocookie.net/fnafapedia/images/8/85/Fnaf4_jumpscare_bonnieindoorway.gif/revision/latest?cb=20160416192135" width="540px" height="250px">
+            <p>Nightmare Bonnie</p>
+        </div>
+    </div>
+        
+    <div id="container">
+
+        <div id="img1" class="col-md-5">
+            <img src="https://i.pinimg.com/originals/96/03/bb/9603bb6d12da139d36254395a3bbb601.gif" width="540px" height="250px">
+            <p>Nightmare Chica</p>
+        </div>
+
+        <div id="img1" class="col-md-5">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d782b000-35cb-4e83-90a9-718e867867b1/dcyg95c-c4a565b2-918e-485f-b065-6316d9a4e598.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q3ODJiMDAwLTM1Y2ItNGU4My05MGE5LTcxOGU4Njc4NjdiMVwvZGN5Zzk1Yy1jNGE1NjViMi05MThlLTQ4NWYtYjA2NS02MzE2ZDlhNGU1OTguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EmmUAzuVgnJIvpdcS7v4V5KUWLHDmk458fq-QZfF-no" width="540px" height="250px">
+            <p>Nightmare foxy</p>
+        </div>
+    </div>
+
+    <div id="container">
+
+      <div id="img1" class="col-md-5">
+          <img src="https://media.tenor.com/XZnGRC6DqJoAAAAC/nightmare-fredbear-fnaf.gif" width="540px" height="250px">
+          <p>Nightmare Fredbear</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://media.tenor.com/ZtQOjNwG2yMAAAAC/plush-trap-jumpscare-fnaf.gif" width="540px" height="250px">
+          <p>Plush trap</p>
+      </div>
+  </div>
+
+
+  <div id="container">
+
+    <div id="img1" class="col-md-5">
+        <img src="https://j.gifs.com/KjO9WZ.gif" width="540px" height="250px">
+        <p>Nightmare</p>
+    </div>
+
+    <div id="img1" class="col-md-5">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ed4526bd-aa1a-4abd-9dcd-520c62c5b418/d9hne0h-13ef0a1e-1cf1-4723-b907-2e16c283d69d.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VkNDUyNmJkLWFhMWEtNGFiZC05ZGNkLTUyMGM2MmM1YjQxOFwvZDlobmUwaC0xM2VmMGExZS0xY2YxLTQ3MjMtYjkwNy0yZTE2YzI4M2Q2OWQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.MtXXY7ZjCe9JilB3fkQj_CU8m1DKx7ES0-89C0xqaDo" width="540px" height="250px">
+        <p>Nightmare Balloon Boy</p>
+    </div>
+</div>
+
+      
+    <h1>Sample Gameplay</h1>
+
+    <div id="container">
+      <div id="img1" class="col-md-5">
+          <img src="https://images.saymedia-content.com/.image/t_share/MTc0NDU2OTMwNTgzMzg5NTQ0/five-nights-at-freddys-4-walkthrough.png" width="540px" height="250px">
+          <p>Figure 1</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/f/fc/Righthall.png/revision/latest?cb=20150730170154" width="540px" height="250px">
+          <p>Figure 2</p>
+      </div>
+  </div>
+      
+  <div id="container">
+
+      <div id="img1" class="col-md-5">
+          <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/7/76/LeftHall.png/revision/latest?cb=20150730153347" width="540px" height="250px">
+          <p>Figure 3</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2015/07/FNAFfeat.jpg" width="540px" height="250px">
+          <p>Figure 4</p>
+      </div>
+</div>
+
+      <div id="container">
+        <div id="img1" class="col-md-5">
+          <img src="https://i.psnprofiles.com/guides/10557/cb4fe6.png" width="540px" height="250px">
+          <p>Figure 5</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/2/2a/Fnaf4Minigame.png/revision/latest?cb=20150731181748" width="540px" height="250px">
+          <p>Figure 6</p>
+      </div>
+    </div>
+</div>
+<button id="button2" onclick="craft()" value="Redirect Me">EXPLORE</button>
+</div>
+
+
+
+<div id="fnaf5">
+
+  <div id="box">
+    <h1>FNAF - Sister Location</h1>
+    <h3>Characters</h3>
+    <div id="container">
+        <div id="img1" class="col-md-5">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/35edb23f-03aa-4abe-8cc4-49d68250e87c/dasybrn-1e517ad6-9683-4ff5-a0d5-c0618aff6361.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM1ZWRiMjNmLTAzYWEtNGFiZS04Y2M0LTQ5ZDY4MjUwZTg3Y1wvZGFzeWJybi0xZTUxN2FkNi05NjgzLTRmZjUtYTBkNS1jMDYxOGFmZjYzNjEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.LGwi7DHivQyWj-VtQKI3aYkHv6DP3-qIoUm4WhxheGo" width="540px" height="250px">
+            <p>Circus Baby</p>
+        </div>
+
+        <div id="img1" class="col-md-5">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8c327453-d068-47ab-b450-6958dda97075/db7iq69-85dfe721-ddf8-422d-8923-ab6156e8a41c.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhjMzI3NDUzLWQwNjgtNDdhYi1iNDUwLTY5NThkZGE5NzA3NVwvZGI3aXE2OS04NWRmZTcyMS1kZGY4LTQyMmQtODkyMy1hYjYxNTZlOGE0MWMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.sTKd54ysR4AMaDeIDXzzg7J1GEMCTQen10BUyNw9w6Y" width="540px" height="250px">
+            <p>Fun time Freddy</p>
+        </div>
+    </div>
+        
+    <div id="container">
+
+        <div id="img1" class="col-md-5">
+            <img src="https://media.tenor.com/uA70qi9Pw5cAAAAC/funtime-foxy-jumpscare.gif" width="540px" height="250px">
+            <p>Fun time Foxy</p>
+        </div>
+
+        <div id="img1" class="col-md-5">
+            <img src="https://pa1.aminoapps.com/6301/8d1e52fc292bdb83638d05b68a4fb1501d5ecb96_hq.gif" width="540px" height="250px">
+            <p>Bon-bon</p>
+        </div>
+    </div>
+
+    <div id="container">
+
+      <div id="img1" class="col-md-5">
+          <img src="https://i.pinimg.com/originals/b8/c6/8c/b8c68c989d174fe14006b198756907be.gif" width="540px" height="250px">
+          <p>Ballora</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ca3ca30-7832-4382-9853-00f784a501bd/df2e2q8-1d0a4d33-d0ec-40ee-a570-a214c6dd5a83.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjYTNjYTMwLTc4MzItNDM4Mi05ODUzLTAwZjc4NGE1MDFiZFwvZGYyZTJxOC0xZDBhNGQzMy1kMGVjLTQwZWUtYTU3MC1hMjE0YzZkZDVhODMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.whE7zqZRKyykW1kxpALk3uvMe_kDoBAtc4mhuf_WHPY" width="540px" height="250px">
+          <p>Enard</p>
+      </div>
+  </div>
+    
+    <h1>Sample Gameplay</h1>
+
+    <div id="container">
+      <div id="img1" class="col-md-5">
+          <img src="https://i.redd.it/jglbrd33r6j51.png" width="540px" height="250px">
+          <p>Figure 1</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://149362454.v2.pressablecdn.com/previously/wp-content/uploads/sites/5/2016/10/ss_03f34834244060abe68f06f8858570db3e326d55.1920x1080.jpg" width="540px" height="250px">
+          <p>Figure 2</p>
+      </div>
+  </div>
+      
+  <div id="container">
+
+      <div id="img1" class="col-md-5">
+          <img src="https://gamefabrique.com/screenshots2/pc/five-nights-at-freddys-5-sister-location-02.big.jpg" width="540px" height="250px">
+          <p>Figure 3</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://i.ytimg.com/vi/L_0RgUrU5KM/maxresdefault.jpg" width="540px" height="250px">
+          <p>Figure 4</p>
+      </div>
+</div>
+
+      <div id="container">
+        <div id="img1" class="col-md-5">
+          <img src="https://i.ytimg.com/vi/LJ1m8EO69SY/maxresdefault.jpg" width="540px" height="250px">
+          <p>Figure 5</p>
+      </div>
+
+      <div id="img1" class="col-md-5">
+          <img src="https://i.ytimg.com/vi/AgSUOaovtO4/maxresdefault.jpg" width="540px" height="250px">
+          <p>Figure 6</p>
+      </div>
+    </div>
+</div>
+<button id="button2" onclick="craft()" value="Redirect Me">EXPLORE</button>
+</div>
+
+</body>
+</html>
